@@ -1,0 +1,173 @@
+﻿@model TestViewModel
+
+
+<div class="container-fluid">
+    <form data-ajax="true" data-ajax-complete="myFunc" method="post">
+
+
+        <div class="row">
+            <h3>@Model.Test.title</h3>
+        </div>
+
+        <div class="row">
+            @Html.Raw(Model.Test.content)
+        </div>
+        @for (int i = 0; i < Model.QuestionList.Count; i = i + 2)
+        {
+<div class="row" style="font-size:55px">
+    <div class="col-6">
+        <div class="text-body">@Model.QuestionList.ElementAt(i).question</div>
+        <br />
+        <div id="radio" class="col-xs-12">
+            <br>
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        A
+                        <input type="radio" class="ml-1" id="radio-@i+radio1" value="One" name="radio-@i">
+                    </div>
+                </div>
+                <label for="radio1" class="form-control test-option ">@Model.QuestionList.ElementAt(i).selectedFirst</label><br>
+            </div>
+            <br>
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        B
+                        <input type="radio" class="ml-1" id="radio-@i+radio2" value="Two" name="radio-@i">
+                    </div>
+                </div>
+                <label for="radio2" class="form-control test-option ">@Model.QuestionList.ElementAt(i).selectedSecond</label>
+            </div>
+            <br>
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        C
+                        <input type="radio" class="ml-1" id="radio-@i+radio3" value="Three" name="radio-@i">
+                    </div>
+                </div>
+                <label for="radio3" class="form-control test-option ">@Model.QuestionList.ElementAt(i).selectedThird</label>
+            </div>
+            <br>
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        D
+                        <input type="radio" class="ml-1" id="radio-@i+radio4" value="Four" name="radio-@i">
+                    </div>
+                </div>
+                <label for="radio4" class="form-control test-option ">@Model.QuestionList.ElementAt(i).selectedFourth</label>
+            </div>
+            <br>
+
+            <br />
+        </div>
+    </div>
+    @{int c = i + 1;}
+    <div class="col-6">
+        <div class="text-body">@Model.QuestionList.ElementAt(c).question</div>
+        <br />
+        <div id="radio" class="col-xs-12">
+            <br>
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        A
+                        <input type="radio" class="ml-1" id="radio-@c+radio1" value="One" name="radio-@c">
+                    </div>
+                </div>
+                <label for="radio1" class="form-control test-option ">@Model.QuestionList.ElementAt(c).selectedFirst</label><br>
+            </div>
+            <br>
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        B
+                        <input type="radio" class="ml-1" id="radio-@c+radio2" value="Two" name="radio-@c">
+                    </div>
+                </div>
+                <label for="radio2" class="form-control test-option ">@Model.QuestionList.ElementAt(c).selectedSecond</label>
+            </div>
+            <br>
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        C
+                        <input type="radio" class="ml-1" id="radio-@c+radio3" value="Three" name="radio-@c">
+                    </div>
+                </div>
+                <label for="radio3" class="form-control test-option ">@Model.QuestionList.ElementAt(c).selectedThird</label>
+            </div>
+            <br>
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        D
+                        <input type="radio" class="ml-1" id="radio-@c+radio4" value="Four" name="radio-@c">
+                    </div>
+                </div>
+                <label for="radio4" class="form-control test-option ">@Model.QuestionList.ElementAt(c).selectedFourth</label>
+            </div>
+            <br>
+
+            <br />
+        </div>
+    </div>
+
+</div>}
+        <div>
+            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sınavı Tamamla" onclick="myFunc" />
+        </div>
+
+    </form>
+</div>
+@section scripts{
+
+    <script type="text/javascript">
+        function myFunc() {
+            const radios = Array.from(document.getElementsByClassName("ml-1"));
+            let checkedRadious = [];
+            let answers = [];
+            console.log(radios);
+            radios.map(item => {
+                if (item.checked == true) {
+                    checkedRadious.push(item)
+                }
+            })
+            console.log(checkedRadious);
+           @for (int i = 0; i < Model.QuestionList.Count; i++)
+           {
+
+               @:answers.push('@Model.QuestionList[i].Answer');
+           };
+            for (var i = 0; i < answers.length; i++) {
+                if (checkedRadious[i].defaultValue == answers[i]) {
+                    console.log("dogru " + i);
+
+                    let element = document.getElementById(checkedRadious[i].id);
+                    console.log(checkedRadious[i].id);
+                    console.log(element)
+
+                    element.parentElement.parentElement.nextElementSibling.style.backgroundColor = "green"
+
+
+
+                } else {
+                    console.log("yanlış " + i)
+                    let element = document.getElementById(checkedRadious[i].id);
+
+                    console.log(checkedRadious[i].id);
+                    element.parentElement.parentElement.nextElementSibling.style.backgroundColor = "red"
+                }
+
+            }
+            elements = document.getElementsByTagName("INPUT")
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].disabled = "disabled"
+            }
+
+        }
+    </script>
+
+}

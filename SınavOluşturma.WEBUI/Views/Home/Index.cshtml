@@ -1,0 +1,113 @@
+﻿@model HomeViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .btn-link{
+        color: brown
+    }
+        .btn-link:hover {
+            color: brown;
+            text-decoration: underline;
+        }
+    .btn-primary {
+        color: #fff;
+        background-color: brown;
+        border-color: #1861ac;
+    }
+</style>
+
+<div id="accordion">
+    @for (int i = 0; i < Model.Tests.Length; i++)
+    {
+        <form asp-controller="Home" asp-action="Index" method="post">
+
+            <div class="card">
+
+                <div class="card-header" id="heading-@i">
+                    <h5 class="mb-0">
+                        <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse-@i" aria-expanded="false" aria-controls="collapse-@i">
+                            <h4>
+                                @Html.Raw(Model.Tests[i].title)
+                            </h4>
+                        </button>
+                    </h5>
+                </div>           
+
+                <div id="collapse-@i" class="collapse hide" aria-labelledby="heading-@i" data-parent="#accordion">
+                    <div class="card-body">
+                        @Html.Raw(Model.Tests[i].content)
+
+                        <hr />
+
+                        <div id="questions">
+                            @for (int q = 0; q < 4; q++)
+                            {
+                                int c = q + 1;
+                                <div class="d-flex">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Soru @c</span>
+                                    </div>
+
+                                    @Html.TextBoxFor(m => m.Questions[q].question, new { @class = "form-control flex-fill", @required = "" })
+
+                                </div>
+                                <div class="d-flex">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend" style="width:50px;">
+                                            <span class="input-group-text flex-fill">A) </span>
+                                        </div>
+
+                                        @Html.TextBoxFor(m => m.Questions[q].selectedFirst, new { @class = "form-control flex-fill", @required = "" })
+
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="input-group-prepend" style="width:50px;">
+                                            <span class="input-group-text flex-fill">B) </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Questions[q].selectedSecond, new { @class = "form-control flex-fill", @required = "" })
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend" style="width:50px;">
+                                            <span class="input-group-text flex-fill">C) </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Questions[q].selectedThird, new { @class = "form-control flex-fill", @required = "" })
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="input-group-prepend" style="width:50px;">
+                                            <span class="input-group-text flex-fill">D) </span>
+                                        </div>
+                                        @Html.TextBoxFor(m => m.Questions[q].selectedFourth, new { @class = "form-control flex-fill", @required = "" })
+                                    </div>
+                                </div>
+
+
+                                <div class="d-flex justify-content-center">
+                                    @Html.DropDownListFor(m => m.Questions[q].Answer, (List<SelectListItem>)ViewBag.options, new { @required = "" })
+                                </div>
+
+                                <br />
+                                <br />}
+                            <input type="hidden" name="title" value="@Model.Tests[i].title" />
+                            <input type="hidden" name="content" value="@Model.Tests[i].content" />
+
+                            <div>
+                                <button class="btn btn-lg btn-primary btn-block" name="contentsId" value="@i" type="submit">Sınavı Oluştur</button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </form>}
+</div>

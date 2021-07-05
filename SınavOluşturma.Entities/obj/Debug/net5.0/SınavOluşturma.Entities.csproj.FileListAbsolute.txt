@@ -1,0 +1,15 @@
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\bin\Debug\net5.0\SınavOluşturma.Entities.deps.json
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\bin\Debug\net5.0\SınavOluşturma.Entities.dll
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\bin\Debug\net5.0\ref\SınavOluşturma.Entities.dll
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\bin\Debug\net5.0\SınavOluşturma.Entities.pdb
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\bin\Debug\net5.0\SınavOluşturma.Shared.dll
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\bin\Debug\net5.0\SınavOluşturma.Shared.pdb
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\obj\Debug\net5.0\SınavOluşturma.Entities.csproj.AssemblyReference.cache
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\obj\Debug\net5.0\SınavOluşturma.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\obj\Debug\net5.0\SınavOluşturma.Entities.AssemblyInfoInputs.cache
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\obj\Debug\net5.0\SınavOluşturma.Entities.AssemblyInfo.cs
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\obj\Debug\net5.0\SınavOluşturma.Entities.csproj.CoreCompileInputs.cache
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\obj\Debug\net5.0\SınavOluşturma.Entities.csproj.CopyComplete
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\obj\Debug\net5.0\SınavOluşturma.Entities.dll
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\obj\Debug\net5.0\ref\SınavOluşturma.Entities.dll
+C:\Kişisel\Sınav Oluşturma\SınavOluşturma\SınavOluşturma.Entities\obj\Debug\net5.0\SınavOluşturma.Entities.pdb

@@ -1,0 +1,295 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Services\\SınavOluşturma.Services.csproj": {}
+  },
+  "projects": {
+    "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Data\\SınavOluşturma.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Data\\SınavOluşturma.Data.csproj",
+        "projectName": "SınavOluşturma.Data",
+        "projectPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Data\\SınavOluşturma.Data.csproj",
+        "packagesPath": "C:\\Users\\tuncm\\.nuget\\packages\\",
+        "outputPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tuncm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Entities\\SınavOluşturma.Entities.csproj": {
+                "projectPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Entities\\SınavOluşturma.Entities.csproj"
+              },
+              "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Shared\\SınavOluşturma.Shared.csproj": {
+                "projectPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Shared\\SınavOluşturma.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.34, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Entities\\SınavOluşturma.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Entities\\SınavOluşturma.Entities.csproj",
+        "projectName": "SınavOluşturma.Entities",
+        "projectPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Entities\\SınavOluşturma.Entities.csproj",
+        "packagesPath": "C:\\Users\\tuncm\\.nuget\\packages\\",
+        "outputPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tuncm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Shared\\SınavOluşturma.Shared.csproj": {
+                "projectPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Shared\\SınavOluşturma.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Services\\SınavOluşturma.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Services\\SınavOluşturma.Services.csproj",
+        "projectName": "SınavOluşturma.Services",
+        "projectPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Services\\SınavOluşturma.Services.csproj",
+        "packagesPath": "C:\\Users\\tuncm\\.nuget\\packages\\",
+        "outputPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tuncm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Data\\SınavOluşturma.Data.csproj": {
+                "projectPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Data\\SınavOluşturma.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.34, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Shared\\SınavOluşturma.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Shared\\SınavOluşturma.Shared.csproj",
+        "projectName": "SınavOluşturma.Shared",
+        "projectPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Shared\\SınavOluşturma.Shared.csproj",
+        "packagesPath": "C:\\Users\\tuncm\\.nuget\\packages\\",
+        "outputPath": "C:\\Kişisel\\Sınav Oluşturma\\SınavOluşturma\\SınavOluşturma.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tuncm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

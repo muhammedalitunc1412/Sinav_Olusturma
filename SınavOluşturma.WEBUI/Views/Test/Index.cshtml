@@ -1,0 +1,64 @@
+﻿@model TestViewModel
+@{ ViewData["Title"] = "Test Listesi";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+@{if (Model.TestList.Count == 0)
+    {
+<span>Liste Boş</span> }
+else
+{
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" />
+                <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+
+                                <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+                                                <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+                                                                <script>
+                                                                    $(document).ready(function () {
+                                                                        $('#myTable').DataTable();
+                                                                    });
+                                                                </script>
+
+
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <h1 class="h3">Test List</h1>
+                                                                                        <hr>
+                                                                                        <a class="btn btn-primary btn-sm" href="/Home/Index">Test Oluştur</a>
+                                                                                        <hr>
+                                                                                        <table data-page-length='3' id="myTable" class="table table-bordered mt-3">
+                                                                                            <thead>
+                                                                                                <tr>
+                                                                                                    <td>Id</td>
+                                                                                                    <td>Başlık</td>
+                                                                                                    <td>Tarih</td>
+                                                                                                    <td>İşlemler</td>                                                                                                   
+                                                                                                  
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+                                                                                                @foreach (var test in Model.TestList)
+                                                                                                {
+                                                                                            <tr>
+
+                                                                                                <th scope="row">@test.testId</th>
+                                                                                                <td>
+                                                                                                    <a href="/Test/SolveTest/@test.testId" class="btn">@test.title</a>
+                                                                                                </td>
+                                                                                                <td>@test.createdDate</td>
+                                                                                                <td>
+                                                                                                    <div class="row">
+                                                                                                        <a href="/Test/DeleteTest/@test.testId" class="btn btn-danger" style="margin-left:25px">Sil</a>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                            </tr>
+}
+
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+
+
+                                                                                              } }
+
